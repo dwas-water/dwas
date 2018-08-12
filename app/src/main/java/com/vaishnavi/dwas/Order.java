@@ -1,7 +1,7 @@
-package com.example.vaishnavi.dwas123;
+package com.vaishnavi.dwas;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class Order extends AppCompatActivity {
 

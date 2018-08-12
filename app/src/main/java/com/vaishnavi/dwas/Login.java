@@ -1,8 +1,8 @@
-package com.example.vaishnavi.dwas123;
+package com.vaishnavi.dwas;
 
+import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class Login extends AppCompatActivity {
     private TextInputLayout textInputMobile;

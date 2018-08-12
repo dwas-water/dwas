@@ -1,4 +1,4 @@
-package com.example.vaishnavi.dwas123;
+package com.vaishnavi.dwas;
 
 import android.app.Dialog;
 import android.content.Context;

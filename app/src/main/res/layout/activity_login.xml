@@ -12,71 +12,109 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/text_input_mobile"
         android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="250dp"
         app:errorEnabled="true"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="148dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
         tools:ignore="MissingConstraints">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="54dp"
             android:hint="Mobile Number"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/text_input_password"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="320dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
         app:counterEnabled="true"
         app:errorEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_mobile"
         app:passwordToggleEnabled="true"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="232dp">
+        tools:ignore="MissingConstraints">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
 
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:layout_width="94dp"
-        android:layout_height="48dp"
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
         android:textColor="@android:color/white"
-        android:textSize="27dp"
-        android:textStyle="italic"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="323dp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_password"
+        app:layout_constraintVertical_bias="0.059" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="328dp"
-        android:layout_height="51dp"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Create a new account?"
         android:textColor="@android:color/white"
-        android:textSize="21dp"
-        android:textStyle="italic"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="421dp" />
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="151dp"
-        android:layout_height="133dp"
-        app:srcCompat="@drawable/dwas_jpg"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_input_mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216"
+        app:srcCompat="@drawable/dwas_jpg" />
+
 
 </android.support.constraint.ConstraintLayout>

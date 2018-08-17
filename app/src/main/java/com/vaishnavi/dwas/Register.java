@@ -1,17 +1,34 @@
 package com.vaishnavi.dwas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 public class Register extends AppCompatActivity implements ExampleDialog.ExampleDialogListener{
+
      private TextView textViewAddress;
      private TextInputLayout textInputName;
      private TextInputLayout textInputMobile;
      private TextInputLayout textInputPassword;
+
+    {
+        Button btn = (Button) findViewById(R.id.button4);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent intent3 = new Intent(Register.this, Home.class);
+                startActivity(intent3);
+                Register.this.finish();
+            }
+        });
+    }
 
     public Register(TextView textViewAddress) {
         this.textViewAddress = textViewAddress;
@@ -96,10 +113,17 @@ public class Register extends AppCompatActivity implements ExampleDialog.Example
         exampleDialog.show(getSupportFragmentManager(),"example dialog");
     }
 
+    public Register() {
+
+    }
+
     @Override
     public void applyTexts(String colonyname, String housename, String doornumber) {
      textViewAddress.setText(colonyname);
         textViewAddress.setText(housename);
         textViewAddress.setText(doornumber);
     }
+
+
 }
+

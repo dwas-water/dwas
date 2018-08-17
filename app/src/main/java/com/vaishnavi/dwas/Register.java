@@ -27,7 +27,8 @@ public class Register extends AppCompatActivity implements ExampleDialog.Example
                 startActivity(intent3);
                 Register.this.finish();
             }
-        });
+                               }
+        );
     }
 
     public Register(TextView textViewAddress) {
